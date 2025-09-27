@@ -1244,3 +1244,20 @@ p.dummy_text {
 .margin_top90 {
     margin-top: 90px;
 }
+
+/* Search and Shopping Cart Button Styles */
+.search_btn li a {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.search_btn li a:hover {
+    color: #8b2791 !important;
+    transform: scale(1.1);
+}
+
+.fa-search:hover,
+.fa-shopping-cart:hover {
+    color: #8b2791 !important;
+    cursor: pointer;
+}

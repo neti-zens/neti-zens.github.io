@@ -122,6 +122,32 @@ $(function () {
         }, 1000);
     });
 	
+	/* Search and Shopping Cart Functions
+	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	
+	// Search functionality
+	$(document).on('click', '.fa-search', function(e) {
+		e.preventDefault();
+		var searchQuery = prompt("Enter your search query:");
+		if (searchQuery && searchQuery.trim() !== "") {
+			// You can customize this to your needs
+			alert("Searching for: " + searchQuery);
+			// Example: redirect to search results
+			// window.location.href = "search.html?q=" + encodeURIComponent(searchQuery);
+		}
+	});
+	
+	// Shopping cart functionality
+	$(document).on('click', '.fa-shopping-cart', function(e) {
+		e.preventDefault();
+		// Simple cart notification
+		alert("Shopping cart opened!\nYour cart is currently empty.");
+		// You can customize this to show actual cart contents
+		// Example: show cart modal or redirect to cart page
+		// $('#cart-modal').modal('show');
+		// window.location.href = "cart.html";
+	});
+
 	/* Contact-form
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
